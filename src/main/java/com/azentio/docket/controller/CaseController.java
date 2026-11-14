@@ -57,7 +57,7 @@ public class CaseController {
 
     @PostMapping("/{id}/actions")
     @ResponseStatus(HttpStatus.OK)
-    public CaseDetailResponse performAction(
+    public CaseDetailResponse   performAction(
             @PathVariable Long id,
             @Valid @RequestBody CaseActionRequest request,
             Authentication authentication) {
